@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="408dp"
+        android:layout_height="728dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/editTextemail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Email"
+                        android:inputType="textEmailAddress" />
+
+                    <EditText
+                        android:id="@+id/editText2"
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Password"
+                        android:inputType="textPassword" />
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="LOGIN"
+                        android:id="@+id/login"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <EditText
+                        android:id="@+id/editText2tab2"
+                        android:hint="Username"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10" />
+                    <EditText
+                        android:id="@+id/editTextemail2"
+                        android:hint="Email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="textEmailAddress" />
+                    <EditText
+                        android:id="@+id/editTextpasstab2"
+                        android:hint="Password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="textEmailAddress" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <EditText
+                        android:id="@+id/editText1tab3"
+                        android:hint="Phone Number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="phone"/>
+                    <EditText
+                        android:id="@+id/editText2tab3"
+                        android:hint="Address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10" />
+                    <Button
+                        android:id="@+id/submit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SUBMIT DETAILS"/>
+
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+</androidx.constraintlayout.widget.ConstraintLayout>
